@@ -5,9 +5,9 @@ services:
     links:
       - db
     ports:
-      - "8080:5000"
+      - "5000:5000"
   db:
-    platform: linux/x86_64
+#    platform: linux/x86_64
     image: mysql:5.7
     ports:
       - "3306:3306"
